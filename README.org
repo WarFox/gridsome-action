@@ -1,0 +1,19 @@
+[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+
+* Gridsome Action
+
+This action installs the =version= of Gridsome in nodejs 12 LTS docker container and runs =gridsome build=
+
+** Inputs
+
+*** version
+
+Version of gridsome. Defaults to =latest=
+
+** Example usage
+
+   #+begin_src yaml
+     uses: warfox/gridsome-action@v1
+     with:
+       version:latest
+   #+end_src

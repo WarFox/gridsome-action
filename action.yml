@@ -1,0 +1,14 @@
+# action.yml
+name: 'Gridsome Action'
+author: 'Deepu Mohan Puthrote'
+description: 'Github action for building gridsome website'
+inputs:
+  version:  # version of gridsome
+    description: 'Required version of gridsome'
+    required: false
+    default: 'latest'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}
